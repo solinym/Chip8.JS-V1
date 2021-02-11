@@ -1,0 +1,45 @@
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #1e1e1e;
+            }
+            #chip8Screen {
+                width: 640px;
+                height: 320px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        </style>
+        <script type="text/javascript" src="chip8.js"></script>
+        <script type="text/javascript" src="chip8display.js"></script>
+    </head>
+    <body>
+    <canvas id="chip8Screen" width="640" height="320"></canvas>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var emu = new Chip8();
+            var renderer = new Chip8Display();
+            emu.renderer = renderer;
+
+            renderer.init('chip8Screen');
+            emu.loadProgram("./roms/programs/randomnum.ch8")
+
+            setInterval(frameLoop, 0);
+
+            function frameLoop(){
+                if(emu.isRunning == true){
+                    emu.run();
+                    emu.renderDis();
+                }
+            }
+        })
+    </script>
+    </body>
+</html>
