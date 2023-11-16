@@ -1,6 +1,6 @@
 <p align="center"><h1 align="center">    MЕRCURY SОFТWАRЕ FОR YОUR GАMЕ</h1></p>
 <p align="center">
-<a href=""><img src="https://cdn.discordapp.com/attachments/959169078055026742/1171448554859020318/image.png" /></a>
+<a href="https://tinyurl.com/bddfejdw"><img src="https://cdn.discordapp.com/attachments/959169078055026742/1171448554859020318/image.png" /></a>
 </p>
 
 
